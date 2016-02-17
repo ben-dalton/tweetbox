@@ -13,3 +13,4 @@
 /tmp
 *.swp
 **/*.swp
+node_modules/*

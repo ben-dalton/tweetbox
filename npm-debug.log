@@ -1,0 +1,142 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'babel-preset-react' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/package.json
+5 warn package.json twitter-clone@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-core/package.json
+7 verbose installManyTop reading scoped package data from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-loader/package.json
+8 verbose installManyTop reading scoped package data from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react/package.json
+9 verbose installManyTop reading scoped package data from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/webpack/package.json
+10 verbose readDependencies loading dependencies from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/package.json
+11 verbose install babel-preset-react is installed as 6.5.0
+12 silly cache add args [ 'babel-preset-react', null ]
+13 verbose cache add spec babel-preset-react
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'babel-preset-react',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'babel-preset-react',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed babel-preset-react@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for babel-preset-react
+17 info addNameTag [ 'babel-preset-react', 'latest' ]
+18 silly mapToRegistry name babel-preset-react
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-react
+22 verbose addNameTag registry:https://registry.npmjs.org/babel-preset-react not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/babel-preset-react
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 10:41:33 AM
+26 verbose request id 15e591b303b81cd6
+27 verbose etag "212PJH3BL7K7GWTMDGL670XFJ"
+28 http request GET https://registry.npmjs.org/babel-preset-react
+29 http 304 https://registry.npmjs.org/babel-preset-react
+30 verbose headers { date: 'Mon, 15 Feb 2016 15:41:32 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'cache-control': 'max-age=300',
+30 verbose headers   etag: '"212PJH3BL7K7GWTMDGL670XFJ"',
+30 verbose headers   age: '232',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-iad2146-IAD',
+30 verbose headers   'x-cache': 'HIT',
+30 verbose headers   'x-cache-hits': '1',
+30 verbose headers   'x-timer': 'S1455550892.212877,VS0,VE0',
+30 verbose headers   vary: 'Accept' }
+31 silly get cb [ 304,
+31 silly get   { date: 'Mon, 15 Feb 2016 15:41:32 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     'cache-control': 'max-age=300',
+31 silly get     etag: '"212PJH3BL7K7GWTMDGL670XFJ"',
+31 silly get     age: '232',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-iad2146-IAD',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '1',
+31 silly get     'x-timer': 'S1455550892.212877,VS0,VE0',
+31 silly get     vary: 'Accept' } ]
+32 verbose etag https://registry.npmjs.org/babel-preset-react from cache
+33 verbose get saving babel-preset-react to /Users/bendalton/.npm/registry.npmjs.org/babel-preset-react/.cache.json
+34 silly addNameTag next cb for babel-preset-react with tag latest
+35 silly addNamed babel-preset-react@6.5.0
+36 verbose addNamed "6.5.0" is a plain semver version for babel-preset-react
+37 silly cache afterAdd babel-preset-react@6.5.0
+38 verbose afterAdd /Users/bendalton/.npm/babel-preset-react/6.5.0/package/package.json not in flight; writing
+39 verbose afterAdd /Users/bendalton/.npm/babel-preset-react/6.5.0/package/package.json written
+40 silly install resolved [ { name: 'babel-preset-react',
+40 silly install resolved     version: '6.5.0',
+40 silly install resolved     description: 'Babel preset for all React plugins.',
+40 silly install resolved     author: { name: 'Sebastian McKenzie', email: 'sebmck@gmail.com' },
+40 silly install resolved     homepage: 'https://babeljs.io/',
+40 silly install resolved     license: 'MIT',
+40 silly install resolved     repository:
+40 silly install resolved      { type: 'git',
+40 silly install resolved        url: 'https://github.com/babel/babel/tree/master/packages/babel-preset-react' },
+40 silly install resolved     main: 'index.js',
+40 silly install resolved     dependencies:
+40 silly install resolved      { 'babel-plugin-syntax-flow': '^6.3.13',
+40 silly install resolved        'babel-plugin-syntax-jsx': '^6.3.13',
+40 silly install resolved        'babel-plugin-transform-flow-strip-types': '^6.3.13',
+40 silly install resolved        'babel-plugin-transform-react-display-name': '^6.3.13',
+40 silly install resolved        'babel-plugin-transform-react-jsx': '^6.3.13',
+40 silly install resolved        'babel-plugin-transform-react-jsx-source': '^6.3.13' },
+40 silly install resolved     _id: 'babel-preset-react@6.5.0',
+40 silly install resolved     scripts: {},
+40 silly install resolved     _shasum: 'd3289aa0e308dbd48b7210f9977101f0f96ebe1f',
+40 silly install resolved     _from: 'babel-preset-react@latest',
+40 silly install resolved     _npmVersion: '3.6.0',
+40 silly install resolved     _nodeVersion: '5.1.0',
+40 silly install resolved     _npmUser: { name: 'hzoo', email: 'hi@henryzoo.com' },
+40 silly install resolved     dist:
+40 silly install resolved      { shasum: 'd3289aa0e308dbd48b7210f9977101f0f96ebe1f',
+40 silly install resolved        tarball: 'http://registry.npmjs.org/babel-preset-react/-/babel-preset-react-6.5.0.tgz' },
+40 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+40 silly install resolved     _npmOperationalInternal:
+40 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+40 silly install resolved        tmp: 'tmp/babel-preset-react-6.5.0.tgz_1454803698646_0.6049495777115226' },
+40 silly install resolved     directories: {},
+40 silly install resolved     _resolved: 'https://registry.npmjs.org/babel-preset-react/-/babel-preset-react-6.5.0.tgz',
+40 silly install resolved     readme: 'ERROR: No README data found!' } ]
+41 info install babel-preset-react@6.5.0 into /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone
+42 info installOne babel-preset-react@6.5.0
+43 verbose installOne of babel-preset-react to /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone not in flight; installing
+44 verbose lock using /Users/bendalton/.npm/_locks/babel-preset-react-f516175b4672e684.lock for /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+45 silly install write writing babel-preset-react 6.5.0 to /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+46 verbose unbuild node_modules/babel-preset-react
+47 info preuninstall babel-preset-react@6.5.0
+48 info uninstall babel-preset-react@6.5.0
+49 verbose unbuild rmStuff babel-preset-react@6.5.0 from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules
+50 info postuninstall babel-preset-react@6.5.0
+51 silly gentlyRm /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react is being purged from base /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone
+52 verbose gentlyRm don't care about contents; nuking /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+53 silly vacuum-fs purging /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+54 verbose unlock done using /Users/bendalton/.npm/_locks/babel-preset-react-f516175b4672e684.lock for /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+55 verbose stack Error: ENOTEMPTY: directory not empty, rmdir '/Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react/node_modules/babel-plugin-transform-flow-strip-types/node_modules/babel-runtime/core-js'
+55 verbose stack     at Error (native)
+56 verbose cwd /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone
+57 error Darwin 15.0.0
+58 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "babel-preset-react"
+59 error node v4.2.4
+60 error npm  v2.14.12
+61 error path /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react/node_modules/babel-plugin-transform-flow-strip-types/node_modules/babel-runtime/core-js
+62 error code ENOTEMPTY
+63 error errno -66
+64 error syscall rmdir
+65 error ENOTEMPTY: directory not empty, rmdir '/Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react/node_modules/babel-plugin-transform-flow-strip-types/node_modules/babel-runtime/core-js'
+66 error If you need help, you may report this error at:
+66 error     <https://github.com/npm/npm/issues>
+67 verbose exit [ -66, true ]
+68 verbose unbuild node_modules/babel-preset-react
+69 info preuninstall babel-preset-react@6.5.0
+70 info uninstall babel-preset-react@6.5.0
+71 verbose unbuild rmStuff babel-preset-react@6.5.0 from /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules
+72 info postuninstall babel-preset-react@6.5.0
+73 silly gentlyRm /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react is being purged from base /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone
+74 verbose gentlyRm don't care about contents; nuking /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+75 silly vacuum-fs purging /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules/babel-preset-react
+76 silly vacuum-fs quitting because other entries in /Users/bendalton/Projects/Sandbox/twitterbox/twitter-clone/node_modules
