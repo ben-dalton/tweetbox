@@ -11,6 +11,11 @@ class Main extends React.Component {
 		newTweetsList.unshift({ id: Date.now(), name: "Guest", body: tweetToAdd });
 		this.setState({ tweetsList: newTweetsList });
 	}
+	componentDidMount() {
+		$.ajax("/tweets")
+		.success(data => this.setState({ tweetsList: data  }))
+		.error(error => console.log(error))
+	}
 	render() {
     return (
       <div className="container">
@@ -20,12 +25,24 @@ class Main extends React.Component {
     );
   }
 }
+var React = require('react');
+}
+var tweetToAdd = React.createClass({
 
+render: function() {
+	return (
+		d
+	);
+}
+
+});
+
+module.exports = tweetToAdd;
 let documentReady = () => {
-  ReactDOM.render(
-    <Main />,
-    document.getElementById('react')
-  );
+	let reactNode = document.getElementById('react');
+	if (reactNode) {
+		ReactDOM.render(<Main />, reactNode);
+	}
 };
 
 $(documentReady);

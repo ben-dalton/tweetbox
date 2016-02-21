@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
+  
+  resources :tweets
+	get 'profile' => 'profile#index'
+	patch 'profile' => 'profile#update'
+	
+  devise_for :users
+  root 'home#index'
+
+	# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
   # root 'welcome#index'
 
   # Example of regular route:
