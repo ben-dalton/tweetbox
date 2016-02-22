@@ -1,20 +1,37 @@
 import TweetBox from './components/TweetBox';
 import TweetsList from './components/TweetsList';
+import TweetStore from './stores/TweetStore'
+
+import TweetActions from "./actions/TweetActions";
+TweetActions.getAllTweets();
 
 class Main extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { tweetsList: [] }
 	}
+	// formattedTweets(tweetsList) {
+	// 	let formattedList = tweetsList.map(tweet => {
+	// 		tweet.formattedDate = moment(tweet.created_at).fromNow();
+	// 		return tweet;
+	// 	})
+	// 	return {
+	// 		tweetsList: formattedList
+	// 	}
+	// }
 	addTweet(tweetToAdd){
-		let newTweetsList = this.state.tweetsList;
-		newTweetsList.unshift({ id: Date.now(), name: "Guest", body: tweetToAdd });
-		this.setState({ tweetsList: newTweetsList });
+		// $.post("/tweets", { body: tweetToAdd })
+		// 	.success( savedTweet => {
+		// 		let newTweetsList = this.state.tweetsList;
+		// 		newTweetsList.unshift(savedTweet);
+		// 		this.setState(this.formattedTweets(newTweetsList));
+		// 	})
+		// 	.error(error => console.log(error));
 	}
 	componentDidMount() {
-		$.ajax("/tweets")
-		.success(data => this.setState({ tweetsList: data  }))
-		.error(error => console.log(error))
+		// $.ajax("/tweets")
+		// .success(data => this.setState(this.formattedTweets(data)))
+		// .error(error => console.log(error))
 	}
 	render() {
     return (
@@ -25,19 +42,7 @@ class Main extends React.Component {
     );
   }
 }
-var React = require('react');
-}
-var tweetToAdd = React.createClass({
 
-render: function() {
-	return (
-		d
-	);
-}
-
-});
-
-module.exports = tweetToAdd;
 let documentReady = () => {
 	let reactNode = document.getElementById('react');
 	if (reactNode) {

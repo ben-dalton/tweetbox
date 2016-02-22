@@ -1,9 +1,10 @@
 export default class Tweet extends React.Component {
   render() {
     return (
-      <li className="collection-item">
-        <i className="material-icons circle">person_pin</i>
-        <span className="title">{this.props.name}</span>
+      <li className="collection-item avatar">
+				<img className="circle" src={this.props.gravatar} />
+				<span className="title">{this.props.name}</span>
+				<time>{this.props.formattedDate}</time>
         <p>{this.props.body}</p>
       </li>
     );
